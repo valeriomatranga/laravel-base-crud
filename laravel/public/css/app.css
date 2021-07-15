@@ -9,14 +9,24 @@ h1 {
   text-transform: uppercase;
 }
 
-.add {
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add,
+.update,
+.back {
   text-align: center;
   border: 1px solid gray;
+  border-radius: 10px;
   padding: 10px;
   text-decoration: none;
-  color: green;
   width: 250px;
-  margin: auto;
+  margin: 10px auto;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #list {
@@ -28,10 +38,14 @@ h1 {
 .cards {
   width: 200px;
   height: 350px;
-  margin: 50px;
+  margin: 25px;
 }
 
-.cards img {
+.cards .poster:hover {
+  box-shadow: 0px 0px 20px 5px;
+}
+
+.cards .poster img {
   width: 100%;
   height: 100%;
 }

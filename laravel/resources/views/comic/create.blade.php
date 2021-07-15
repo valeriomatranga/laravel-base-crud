@@ -6,7 +6,7 @@
     
     <h1>Inserisci un nuovo Fumetto</h1>
 
-    <form action="{{route('store')}}" method="post">
+    <form action="{{route('comics.store')}}" method="post">
         @csrf
         <div class="container">
             <div class="form-group">
@@ -29,7 +29,7 @@
 
             <div class="form-group">
                 <label for="prezzo">prezzo</label>
-                <input type="text" name="prezzo" id="prezzo" class="form-control" placeholder="€" aria-describedby="helpId">
+                <input type="text" step="0.01" name="prezzo" id="prezzo" class="form-control" placeholder="€" aria-describedby="helpId">
                 <small id="helpId" class="text-muted"></small>
             </div>
             <button type="submit">Invia</button>

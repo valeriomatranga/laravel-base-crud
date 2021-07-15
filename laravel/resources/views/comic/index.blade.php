@@ -7,7 +7,7 @@
     <h1>fumetti dc</h1>
 
     <div class="add">
-        <a href="{{route('create')}}">Aggiungi un nuovo fumetto</a>
+        <a href="{{route('comics.create')}}">inserisci fumetto</a>
     </div>
 
     <div id="list">
@@ -16,7 +16,7 @@
         <div class="cards">
 
             <div class="poster">
-                <a href="{{route('show', $comic->id)}}">
+                <a href="{{route('comics.show', $comic->id)}}">
                     <img src="{{$comic->poster}}" alt="">
                 </a>
             </div>
